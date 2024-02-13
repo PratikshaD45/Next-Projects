@@ -27,8 +27,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider><HeaderMenu />{children}</MantineProvider>
-        <MantineProvider><FooterLinks />{children}</MantineProvider>
+        <MantineProvider><HeaderMenu />{children}<FooterLinks /></MantineProvider>
       </body>
     </html>
   );
