@@ -7,6 +7,7 @@ import '@mantine/core/styles.css';
 
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { HeaderMenu } from "@/components/header/HeaderMenu";
+import { FooterLinks } from "@/components/FooterLinks";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider><HeaderMenu />{children}</MantineProvider>
+        <MantineProvider><HeaderMenu />, <FooterLinks />{children}</MantineProvider>
       </body>
     </html>
   );
