@@ -1,6 +1,5 @@
 "use client";
 import { Menu, Group, Center, Burger, Container } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './HeaderMenu.module.css';
@@ -36,7 +35,7 @@ export function HeaderMenu() {
   // wriite above code in useState
   const [opened, setOpened] = useState(false);
   const toggle = () => setOpened((o) => !o);
-  
+
   const items = links.map((link) => {
     const menuItems = link.links?.map((item) => (
       <Menu.Item key={item.link}>{item.label}</Menu.Item>

@@ -1,7 +1,7 @@
 import { HeaderMenu } from "@/components/header/HeaderMenu"
 
-const Home =()=>{
-    return <div><HeaderMenu/></div>
+const Home = () => {
+    return <div>home</div>
 }
 
 export default Home
